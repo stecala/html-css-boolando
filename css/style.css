@@ -1,5 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200;8..144,300;8..144,400&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+}
+
+.background-head{
+    background-color: #FF6900;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0 auto;
+    position: fixed;
+    box-shadow: 10px 2px 2px  #424242;
+
+}
+
+.cont-head{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-between;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.sex-selector ul{
+    display: flex;
+    justify-content: center;
+}
+
+.sex-selector ul li{
+    list-style: none;
+}
+
+.sex-selector ul li a,
+.menu span a
+{
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+}
+
+.sex-selector{
+    text-align: center;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.logo img{
+    width: 50%;
+}
+
+.menu{
+    text-align: right;
+    width: 20%;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    color: white;
+    display: flex;
+    align-items: center;
 }
