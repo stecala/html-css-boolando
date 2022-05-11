@@ -1,5 +1,5 @@
+/* reset*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200;8..144,300;8..144,400&display=swap');
-
 *{
     padding: 0;
     margin: 0;
@@ -10,6 +10,11 @@ img{
     width: 100%;
 }
 
+body{
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+/* header */
 .background-head{
     background-color: #FF6900;
     width: 100%;
@@ -17,28 +22,28 @@ img{
     margin: 0 auto;
     position: fixed;
     box-shadow: 10px 2px 2px  #424242;
-
+    z-index: 2;
 }
 
 .cont-head{
     display: flex;
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
-    justify-content: space-between;
-    font-family: 'Roboto Flex', sans-serif;
 }
 
-.sex-selector ul{
+.sex-selector ul,
+.foot-text ul {
     display: flex;
-    justify-content: center;
 }
 
-.sex-selector ul li{
+.sex-selector ul li,
+.foot-text ul li {
     list-style: none;
 }
 
 .sex-selector ul li a,
-.menu span a
+.menu span a,
+.foot-text ul li a
 {
     text-decoration: none;
     padding: 10px;
@@ -54,14 +59,16 @@ img{
 }
 
 .logo{
-    width: 20%;
+    width: 60%;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 0 10px;
 }
 
 .logo img{
-    width: 50%;
+    width: 10%;
+    
 }
 
 .menu{
@@ -76,4 +83,143 @@ img{
     color: white;
     display: flex;
     align-items: center;
+}
+/* main */
+
+.container{
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px 0;
+    margin: 0 auto 75px auto ;
+
+}
+
+.cont-img{
+    width: calc((100% - 30px)/3);
+    margin: 100px 5px 0 5px;
+    position: relative;
+}
+
+.back{
+    display: none;
+}
+
+.descr ul li{
+    list-style: none;
+}
+
+.brand{
+    font-size: 10px;
+}
+
+.article{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.color-price{
+    color: red;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.realprice{
+    text-decoration:line-through;
+    font-size: 15px;
+}
+
+.descr{
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+
+.heart{
+    color: black;
+    background-color: white;
+    position: absolute;
+    right: 0%;
+    bottom: 91%;
+    font-size: 40px;
+    width: 40px;
+    text-align: center;
+}
+
+.discount{
+    font-weight: bold;
+    color: white;
+    background-color: red;
+    width: fit-content;
+    font-size: 15px;
+    padding: 5px 10px;
+    position: absolute;
+    top: 90%;
+    left: 0%;
+}
+
+.bio{
+    font-weight: bold;
+    color: white;
+    background-color: green;
+    width: fit-content;
+    font-size: 15px;
+    padding: 5px 10px;
+    position: absolute;
+    top: 90%;
+    left: 13%;
+}
+
+#bio-b{
+    left: 0%;
+}
+
+.front{
+    z-index: 1;
+}
+
+.back:hover{
+    display: block;
+}
+
+.front:hover{
+    display: none;
+    cursor: pointer;
+}
+
+/* footer */
+footer{
+    background-color: #1A1A1A;
+    color: white;
+    padding: 15px 0;
+}
+
+.cont-foot{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.info{
+    width: 70%;
+}
+
+.info h2{
+    padding: 10px;
+}
+
+.foot-text ul li{
+    font-size: 10px;
+}
+
+.social{
+    width: 30%;
+}
+
+.icon-social{
+    padding: 5px;
+}
+
+.foot-title{
+    text-align: right;
 }
